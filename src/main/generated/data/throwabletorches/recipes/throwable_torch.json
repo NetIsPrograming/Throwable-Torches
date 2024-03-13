@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "minecraft:cobblestone"
+    },
+    "k": {
+      "item": "minecraft:coal"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "k ",
+    "sc"
+  ],
+  "result": {
+    "count": 4,
+    "item": "throwabletorches:throwable_torch"
+  }
+}

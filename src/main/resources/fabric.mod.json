@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "throwabletorches",
+	"version": "${version}",
+	"name": "Throwable Torches",
+	"description": "This mod adds throwable torches.",
+	"authors": [
+		"NetUserGet"
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "MPL-2.0",
+	"icon": "assets/throwabletorches/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.netuserget.throwabletorches.ThrowableTorches"
+		],
+		"client": [
+          "com.netuserget.throwabletorches.ThrowableTorchesClient"
+		],
+		"fabric-datagen": [
+			"com.netuserget.throwabletorches.datagen.ThrowableTorchesDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
