@@ -23,9 +23,6 @@ public class ThrowableTorchItem extends Item {
         if (world.isClient) {
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 1.0F);
         }
-        if (user == null) {
-            return super.use(world, user, hand);
-        }
         ThrowableTorchEntity throwableTorch = new ThrowableTorchEntity(world, user);
         throwableTorch.setItem(itemStack);
         throwableTorch.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0.5F);
